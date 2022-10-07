@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PG.css">
+    <title>VUSI</title>
+</head>
+<body>
+    <div id="arrow-back-btn"></div>
+    <section id="style-1">
+        <div class="creator" id="creator">
+            <p>CHINEDU GABRIEL SEBASTIN</p>
+            <div class="line"></div>
+        </div>
+        <div class="col-1">
+            <div class="wrapper">
+                <div class="img-profile"></div>
+                <h2>VUSI THAMBEKWAYO</h2>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="wrapper">
+                <h1>MEET VUSI</h1>
+                <p>
+                    “You have the time; you just don’t know how to prioritise.”
+                </p>
+                <p>
+
+                    MEET VUSI
+                    – Vusi Thembekwayo
+                    
+                    Vusi has come to carry many titles through his work building and transforming hundreds of businesses across Africa and the world. Venture capitalist, elite coach and mentor, keynote speaker and best-selling author of international acclaim, Vusi is in demand as a catalyst for business change.
+                    
+                    His successful track record of partnering with C-Suite executives and entrepreneurs has drawn invitations to share his knowledge and expertise through 180 presentations on four continents and in 38 countries since 2015.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="style-2">
+        <div class="creator-s-2" id="creator">
+            <div class="line"></div>
+            <p>CHINEDU GABRIEL SEBASTIN</p>
+        </div>
+        <div class="col-1">
+            <div class="wrapper">
+                <div class="img-profile"></div>
+                <h2>VUSI THAMBEKWAYO</h2>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="wrapper">
+                <h1>MEET PEACE ITIMI</h1>
+                <p>
+                    “You have the time; you just don’t know how to prioritise.”
+                </p>
+                <p>
+
+                    PEACE ITIMI
+                    –  I am building a career as a Growth lead with expertise in product-led growth, marketing and analytics. I have experience working as a T-shaped Digital Marketing Manager in agencies, as a Head of Growth at different startups and I am still currently involved with Seedstars as a growth mentor. 
+                    Outside of work, I create YouTube videos, build empowering communities like Women Will Lekki, speak at events like Cogx, and even facilitate training like Google’s Digital Skills for Africa..
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="mentors" id="mentors">
+        <h1>Welcome To Mentor Week</h1>
+        <p>Choose a mentor</p>
+        <div class="btn-wrapper">
+            <button id="mentor-1">
+                Vusi
+            </button><button id="mentor-2">
+                Peace
+            </button>
+        </div>
+    </section>
+    <script>
+        // arrow-back-btn
+        let back_btn = document.getElementById("arrow-back-btn");
+        let firstSection = document.getElementById("style-1");
+        let secondSection = document.getElementById("style-2");
+        // this gets the buttons to select a mentor
+        let mentorsSection_btn = document.getElementById("mentors");
+
+        let firstMentor_btn = document.getElementById("mentor-1");
+
+        let secondMentor_btn = document.getElementById("mentor-2");
+
+        // Event to show the chosen mentor
+        firstMentor_btn.addEventListener('click',()=>{
+            mentorsSection_btn.style.display = 'none';
+            firstSection.style.display = 'flex';
+            back_btn.style.display = 'flex';
+        })
+        secondMentor_btn.addEventListener('click',()=>{
+            mentorsSection_btn.style.display = 'none';
+            secondSection.style.display = 'flex';
+            back_btn.style.display = 'flex';
+        })
+        back_btn.addEventListener('click', ()=>{
+            mentorsSection_btn.style.display = 'flex';
+            secondSection.style.display = 'none';
+            firstSection.style.display = 'none';
+            back_btn.style.display = 'none';
+        })
+
+    </script>
+</body>
+</html>
