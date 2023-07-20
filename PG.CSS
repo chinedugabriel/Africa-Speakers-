@@ -146,7 +146,7 @@ section#style-2 .img-profile{
     position: absolute;
     top: 15px;
     left: 10px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 90%;
     display: flex;
     flex-flow: column nowrap;
